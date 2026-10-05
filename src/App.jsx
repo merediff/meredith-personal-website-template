@@ -1,13 +1,13 @@
 // This file contains the website's content and component structure
 import './App.css'
-import profileImage from './assets/profile.png'
+import profileImage from './assets/headshot-removebg-preview.png'
 
 // This object stores the words and links shown on the page.
 // You can edit the text here without needing to change the layout below.
 // Change these details to make this website yours.
 const siteInfo = {
   name: 'Meredith Papa',
-  role: 'Computer science student',
+  role: 'Computer science student @ University of Florida',
   intro: 'I am learning how to build useful things with code, one small project at a time.',
   // Replace profile.png in src/assets to use your own profile picture.
   image: profileImage,
@@ -18,13 +18,15 @@ const siteInfo = {
   skills: ['JavaScript', 'Python', 'React', 'HTML & CSS', 'Git & GitHub'],
   // Add a new project by copying one of these lines and changing its words.
   projects: [
-    { title: 'Calculator', description: 'A simple calculator.', tag: 'Python project' },
+    { title: 'Scientific Calculator', description: 'A simple scientific calculator; includes several arithmetic operations', tag: 'Python project' },
+    {title: 'Portfolio Website', description: 'A personal portfolio website built with React and CSS', tag: 'React project' },
+    {title: 'Blackjack Game', description: 'A simple blackjack game', tag: 'Python project' },
     { title: 'Your swamphacks project...', description: 'Coming Soon.', tag: 'TBD' },
   ],
   // Add your social links here. You can remove any of these if you don't want them to show up.
   links: {
-    github: 'https://github.com/your-username',
-    linkedin: 'https://www.linkedin.com/in/your-username',
+    github: 'https://github.com/merediff',
+    linkedin: 'https://www.linkedin.com/in/meredith-papa',
   },
 }
 
@@ -36,6 +38,9 @@ function App() {
   return (
     // className connects this HTML-like element to styles in App.css.
     <div className="site-shell">
+      <header className="site-header">
+        <div className="scallop" aria-hidden="true"></div>
+      </header>
       <main>
         {/* The hero is the first section visitors see. */}
         <section className="hero">
@@ -113,5 +118,7 @@ function App() {
     </div>
   )
 }
+
+
 
 export default App
