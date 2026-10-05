@@ -1,11 +1,11 @@
 /* This file styles the website components and layout */
 :root {
   /* Change these colors to personalize the website's palette. */
-  --ink: #193c3c;
-  --muted: #5d7470;
+  --ink: hsl(180, 41%, 38%);
+  --muted: #6f958f;
   --paper: #f4f0e8;
-  --line: #cbd5cb;
-  --accent: #b159d4;
+  --line: #bec6be;
+  --accent: #4f1566;
   --cream: #e7efe5;
   --serif: Georgia, 'Times New Roman', serif;
   --sans: 'Trebuchet MS', Arial, sans-serif;
